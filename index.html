@@ -19,9 +19,11 @@
         <h1 class="text-center my-3">Gerador de Currículo</h1>
         <p class="text-center">por Myck Santos</p>
         <div class="row">
+
             <div class="col-md-6">
                 <!-- first column -->
                 <h3>Informações Pessoais</h3>
+
                 <div class="form-group">
                     <label for="nameField">Seu nome</label>
                     <input 
@@ -30,6 +32,7 @@
                     placeholder="Insira o seu nome completo..." 
                     class="form-control">
                 </div>
+
                 <div class="form-group mt-2">
                     <label for="contactField">Contato</label>
                     <input 
@@ -38,6 +41,7 @@
                     placeholder="Insira o seu telefone para contato..." 
                     class="form-control">
                 </div>
+
                 <div class="form-group mt-2">
                     <label for="addressField">Endereço</label>
                     <textarea
@@ -47,6 +51,7 @@
                     rows="5"
                     ></textarea>
                 </div>
+
                 <p class="text-secondary my-3">Links Importantes</p>
                 <div class="form-group">
                     <label for="facebookField">Facebook</label>
@@ -56,6 +61,7 @@
                     placeholder="Insira o link do seu Facebook..." 
                     class="form-control">
                 </div>
+
                 <div class="form-group mt-2">
                     <label for="linkedinField">Linkedin</label>
                     <input 
@@ -64,6 +70,7 @@
                     placeholder="Insira o link do seu Linkedin..." 
                     class="form-control">
                 </div>
+
                 <div class="form-group mt-2">
                     <label for="instagramField">Instagram</label>
                     <input 
@@ -74,30 +81,56 @@
                 </div>
 
             </div>
+
             <div class="col-md-6">
                 <!-- second column -->
                 <h3 class="mt-lg-0 mt-md-0 mt-sm-3">Informações profissionais</h3>
+
                 <div class="form-group">
                     <label for="objectiveField">Objetivo</label>
                     <textarea
                     id="objectiveField"
                     placeholder="Insira o seu objetivo..." 
                     class="form-control"
+                    rows="5"
                     ></textarea>
                 </div>
-                <div class="form-group mt-2">
-                    <label for="xpField">Experiência de Trabalho</label>
+
+                <div class="form-group mt-2" id="we">
+                    <label for="weField">Experiência de Trabalho</label>
                     <textarea
-                    id="xpField"
+                    id="weField"
                     placeholder="Insira as suas experiências..." 
                     class="form-control weField"
+                    rows="3"
                     ></textarea>
 
-                    <div class="container text-center">
-                        <button class="btn btn-primary btn-sm mt-2">Adicionar outra</button>
+                    <!-- nova textarea -->
+
+                    <div class="container text-center" id="weAddButton">
+                        <button onclick="addNewWEField()" class="btn btn-primary btn-sm mt-2">Adicionar outra</button>
                     </div>
                 </div>
+
+                <div class="form-group mt-2" id="aq">
+                    <label for="academicField">Qualificação Acadêmica</label>
+                    <textarea
+                    id="academicField"
+                    placeholder="Insira as suas qualificações acadêmicas..." 
+                    class="form-control aqField"
+                    rows="3"
+                    ></textarea>
+
+                    <div class="container text-center" id="aqAddButton">
+                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm mt-2">Adicionar outra</button>
+                    </div>
+
+                </div>
+
             </div>
+        </div>
+        <div class="container text-center my-3">
+            <button class="btn btn-primary btn-lg">Gerar Currículo</button>
         </div>
     </div>
     
