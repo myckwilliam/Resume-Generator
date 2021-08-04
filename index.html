@@ -15,7 +15,7 @@
 <body>
     <!-- aqui vai o código html -->
 
-    <div class="container">
+    <div class="container" id="cv-form">
         <h1 class="text-center my-3">Gerador de Currículo</h1>
         <p class="text-center">por Myck Santos</p>
         <div class="row">
@@ -49,6 +49,7 @@
                     placeholder="Insira o seu endereço..." 
                     class="form-control"
                     rows="5"
+                    wrap="hard"
                     ></textarea>
                 </div>
 
@@ -130,7 +131,76 @@
             </div>
         </div>
         <div class="container text-center my-3">
-            <button class="btn btn-primary btn-lg">Gerar Currículo</button>
+            <button class="btn btn-primary btn-lg
+            ">Gerar Currículo</button>
+        </div>
+    </div>
+
+    <!-- template do CV -->
+
+    <div class="container" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+
+                <!-- primeira coluna -->
+                <img class='img-fluid my-img' src="https://www.w3schools.com/howto/img_avatar2.png" alt="imagem do candidato">
+
+                <div class="container">
+                    <p class="name">Maria Gonzaga</p>
+                    <p class="number">(79) 98845-7880</p>
+                    <p class="adress">Rua Feitosa, 250</p>
+
+                    <hr>
+
+                    <p><a href="facebook.com">Facebook</a></p>
+                    <p><a href="linkedin.com">Linkedin</a></p>
+                    <p><a href="instagram.com">Instagram</a></p>
+
+                </div>
+            </div>
+            <div class="col-md-8 py-5">
+                
+                <h1 class="name text-center title mb-5">Maria Gonzaga</h1>
+
+                <div class="principal">
+                    <div class="card objective px-1">
+                        <h2>Objetivo</h2>
+                    </div>
+                    <p class="mt-3" id="objective-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum sequi enim vitae culpa omnis recusandae, accusamus illo, reiciendis nobis facilis impedit ducimus, perferendis delectus voluptate mollitia rerum nam quos fugiat veniam aliquam cupiditate in ab ipsa? Nisi quae sed ratione dignissimos sit quod commodi doloribus? Libero nesciunt hic nam, voluptatum voluptates impedit, porro, quidem possimus dolorem sapiente dolorum suscipit. Magnam iste quas amet. Officiis blanditiis dignissimos et accusamus odit, maiores, beatae iure labore cum esse maxime, similique distinctio id cumque?
+                    </p>
+                </div>
+                <div class="principal">
+                    <div class="card experiences px-1">
+                        <h2>Experiências de Trabalho</h2>
+                    </div>
+                    <p class="objective-text mt-3">
+                        <ul>
+                            <li>Jardineira</li>
+                            <li>Escrivã</li>
+                            <li>Ministra</li>
+                            <li>Jardineira</li>
+                            <li>Escrivã</li>
+                            <li>Ministra</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="principal">
+                    <div class="card qualifications px-1">
+                        <h2>Qualificações Acadêmicas</h2>
+                    </div>
+                    <p class="objective-text mt-3">
+                        <ul>
+                            <li>Graduada em Agricultura (2005)</li>
+                            <li>Especialização em Administração (2010)</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <button class="btn btn-primary generator" onclick="print()">Gerar Currículo</button>
+                <!-- segunda coluna -->
+            </div>
         </div>
     </div>
     

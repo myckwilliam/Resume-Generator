@@ -1,3 +1,10 @@
+const objectiveField = document.getElementById('objectiveField');
+const objectiveText = document.getElementById('objective-text');
+
+objectiveField.addEventListener('change', e=> {
+    objectiveText.innerHTML = objectiveField.value
+})
+
 const addNewWEField = () => {
     const newNode = document.createElement('textarea')
     newNode.classList.add('form-control')
@@ -25,3 +32,8 @@ const addNewAQField = () => {
 
     aqOb.insertBefore(newNode, aqAddButtonOb)
 }
+
+const print = () => {
+    window.print()
+}
+

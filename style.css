@@ -1,0 +1,52 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+#cv-form {
+    display: block;
+}
+
+#cv-template {
+    display: block;
+}
+
+:root {
+    --primary-color: hsl(200, 100%, 50%);
+}
+
+.my-img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.background {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.title {
+    font-weight: 980;
+}
+
+#objective-text {
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+.principal {
+    padding-bottom: 6rem;
+}
