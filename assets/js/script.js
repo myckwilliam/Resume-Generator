@@ -85,8 +85,8 @@ var opt = {
     margin:       0,
     filename:     'myCV.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 4 },
-    jsPDF:        { format: 'a4', orientation: 'portrait' }
+    html2canvas:  { scale: 4, windowWidth: 1024},
+    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
 };
 
 function generateResume(){
