@@ -35,7 +35,7 @@ const atualizar = () => {
     address.innerHTML = addressField.value;
     facebookLink.innerHTML = `Facebook: ${facebookField.value}`;
     linkedinLink.innerHTML = `Linkedin: ${linkedinField.value}`;
-    instagramLink.innerHTML = `Instagram: ${InstagramField.value}`;
+    instagramLink.innerHTML = `Instagram: ${instagramField.value}`;
     objectiveText.innerHTML = objectiveField.value;
     for(element of weField) {weOutput += `<li>${element.value}</li>`}
     for(element of aqField) {aqOutput += `<li>${element.value}</li>`}
@@ -76,5 +76,22 @@ const print = () => {
 
     cvForm.style.display = 'none';
     window.print()
+}
+
+// PDF GENERATOR
+
+
+const areaCV = document.getElementById('cv-template');
+
+var opt = {
+    margin:       0,
+    filename:     'myCV.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 4 },
+    jsPDF:        { format: 'a4', orientation: 'portrait' }
+};
+
+function generateResume(){
+    html2pdf(areaCV, opt)
 }
 

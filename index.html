@@ -142,7 +142,7 @@
             <div class="col-md-4 text-center py-5 background">
 
                 <!-- primeira coluna -->
-                <img class='img-fluid my-img' src="https://www.w3schools.com/howto/img_avatar2.png" alt="imagem do candidato">
+                <div class="my-img"></div>
 
                 <div class="container">
                     <p class="name">Maria Gonzaga</p>
@@ -183,7 +183,7 @@
                     </ul>
                 </div>
 
-                <div class="principal">
+                <div class="principal" id="after1">
                     <div class="card qualifications px-1">
                         <h2>Qualificações Acadêmicas</h2>
                     </div>
@@ -193,10 +193,12 @@
                     </ul>
                 </div>
 
-                <button class="btn btn-primary generator" onclick="print()">Imprimir Currículo</button>
                 <!-- segunda coluna -->
             </div>
         </div>
+    </div>
+    <div class="gen my-3">
+        <button class="btn btn-primary generator" onclick="generateResume()">Imprimir Currículo</button>
     </div>
     
 
@@ -204,5 +206,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Main Scripts -->
     <script src="script.js"></script>
+
+    <!-- HTML2PDF -->
+    <script src="html2pdf.bundle.min.js"></script>
 </body>
 </html>
