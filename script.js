@@ -33,9 +33,9 @@ const atualizar = () => {
     nome.forEach(element => element.innerHTML = nameField.value);
     phone.innerHTML = phoneField.value;
     address.innerHTML = addressField.value;
-    facebookLink.innerHTML = facebookField.value;
-    linkedinLink.innerHTML = linkedinField.value;
-    instagramLink.innerHTML = instagramField.value;
+    facebookLink.innerHTML = `Facebook: ${facebookField.value}`;
+    linkedinLink.innerHTML = `Linkedin: ${linkedinField.value}`;
+    instagramLink.innerHTML = `Instagram: ${InstagramField.value}`;
     objectiveText.innerHTML = objectiveField.value;
     for(element of weField) {weOutput += `<li>${element.value}</li>`}
     for(element of aqField) {aqOutput += `<li>${element.value}</li>`}
