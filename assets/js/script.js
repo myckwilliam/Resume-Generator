@@ -17,6 +17,8 @@ const objectiveText = document.querySelector('.objective-text');
 const experiencesList = document.querySelector('.experiences-list');
 const qualificationsList = document.querySelector('.qualifications-list');
 const prince = document.querySelector('.prince');
+const cvTemplate = document.getElementById('cv-template');
+const gen = document.querySelector('.gen');
 
 
 
@@ -25,6 +27,8 @@ const cvForm = document.getElementById('cv-form')
 
 const changeName = () => {
     prince.innerHTML = 'Atualizar Currículo';
+    cvTemplate.style.display = 'block';
+    gen.style.display = 'flex';
 }
 
 const atualizar = () => {
@@ -70,12 +74,6 @@ const addNewAQField = () => {
     const aqAddButtonOb = document.getElementById('aqAddButton')
 
     aqOb.insertBefore(newNode, aqAddButtonOb)
-}
-
-const print = () => {
-
-    cvForm.style.display = 'none';
-    window.print()
 }
 
 // PDF GENERATOR
