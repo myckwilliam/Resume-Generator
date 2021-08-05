@@ -32,7 +32,7 @@ ul {
 .my-img {
     border-radius: 50%;
     width: 200px;
-    background-image: url('img_avatar2.png');
+    background-image: url('/assets/img/img_avatar2.png');
     background-size: cover;
     height: 200px;
     margin-bottom: 40px;
