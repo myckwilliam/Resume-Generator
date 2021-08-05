@@ -1,9 +1,48 @@
 const objectiveField = document.getElementById('objectiveField');
-const objectiveText = document.getElementById('objective-text');
+const nameField = document.getElementById('nameField');
+const phoneField = document.getElementById('phoneField');
+const addressField = document.getElementById('addressField');
+const facebookField = document.getElementById('facebookField');
+const linkedinField = document.getElementById('linkedinField');
+const instagramField = document.getElementById('instagramField');
+const weField = document.getElementsByClassName('weField');
+const aqField = document.getElementsByClassName('aqField');
+const nome = document.querySelectorAll('.name');
+const phone = document.querySelector('.phone');
+const address = document.querySelector('.address');
+const facebookLink = document.querySelector('.facebookLink');
+const linkedinLink = document.querySelector('.linkedinLink');
+const instagramLink = document.querySelector('.instagramLink');
+const objectiveText = document.querySelector('.objective-text');
+const experiencesList = document.querySelector('.experiences-list');
+const qualificationsList = document.querySelector('.qualifications-list');
+const prince = document.querySelector('.prince');
 
-objectiveField.addEventListener('change', e=> {
-    objectiveText.innerHTML = objectiveField.value
-})
+
+
+
+const cvForm = document.getElementById('cv-form')
+
+const changeName = () => {
+    prince.innerHTML = 'Atualizar Currículo';
+}
+
+const atualizar = () => {
+    let weOutput = '';
+    let aqOutput = '';
+    nome.forEach(element => element.innerHTML = nameField.value);
+    phone.innerHTML = phoneField.value;
+    address.innerHTML = addressField.value;
+    facebookLink.innerHTML = facebookField.value;
+    linkedinLink.innerHTML = linkedinField.value;
+    instagramLink.innerHTML = instagramField.value;
+    objectiveText.innerHTML = objectiveField.value;
+    for(element of weField) {weOutput += `<li>${element.value}</li>`}
+    for(element of aqField) {aqOutput += `<li>${element.value}</li>`}
+    experiencesList.innerHTML = weOutput;
+    qualificationsList.innerHTML = aqOutput;
+}
+
 
 const addNewWEField = () => {
     const newNode = document.createElement('textarea')
@@ -34,6 +73,8 @@ const addNewAQField = () => {
 }
 
 const print = () => {
+
+    cvForm.style.display = 'none';
     window.print()
 }
 

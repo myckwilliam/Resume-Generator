@@ -34,10 +34,10 @@
                 </div>
 
                 <div class="form-group mt-2">
-                    <label for="contactField">Contato</label>
+                    <label for="contactField">Telefone</label>
                     <input 
                     type="text" 
-                    id="contactField"
+                    id="phoneField"
                     placeholder="Insira o seu telefone para contato..." 
                     class="form-control">
                 </div>
@@ -76,7 +76,7 @@
                     <label for="instagramField">Instagram</label>
                     <input 
                     type="text" 
-                    id="nameField"
+                    id="instagramField"
                     placeholder="Insira o link do seu Instagram..." 
                     class="form-control">
                 </div>
@@ -100,7 +100,6 @@
                 <div class="form-group mt-2" id="we">
                     <label for="weField">Experiência de Trabalho</label>
                     <textarea
-                    id="weField"
                     placeholder="Insira as suas experiências..." 
                     class="form-control weField"
                     rows="3"
@@ -116,7 +115,7 @@
                 <div class="form-group mt-2" id="aq">
                     <label for="academicField">Qualificação Acadêmica</label>
                     <textarea
-                    id="academicField"
+                    id="aqField"
                     placeholder="Insira as suas qualificações acadêmicas..." 
                     class="form-control aqField"
                     rows="3"
@@ -131,8 +130,8 @@
             </div>
         </div>
         <div class="container text-center my-3">
-            <button class="btn btn-primary btn-lg
-            ">Gerar Currículo</button>
+            <button class="btn btn-primary prince btn-lg
+            " onclick="atualizar(), changeName()">Gerar Currículo</button>
         </div>
     </div>
 
@@ -147,14 +146,14 @@
 
                 <div class="container">
                     <p class="name">Maria Gonzaga</p>
-                    <p class="number">(79) 98845-7880</p>
-                    <p class="adress">Rua Feitosa, 250</p>
+                    <p class="phone">(79) 98845-7880</p>
+                    <p class="address">Rua Feitosa, 250</p>
 
                     <hr>
 
-                    <p><a href="facebook.com">Facebook</a></p>
-                    <p><a href="linkedin.com">Linkedin</a></p>
-                    <p><a href="instagram.com">Instagram</a></p>
+                    <p><a class="facebookLink" href="facebook.com">Facebook</a></p>
+                    <p><a class="linkedinLink" href="linkedin.com">Linkedin</a></p>
+                    <p><a class="instagramLink" href="instagram.com">Instagram</a></p>
 
                 </div>
             </div>
@@ -166,7 +165,7 @@
                     <div class="card objective px-1">
                         <h2>Objetivo</h2>
                     </div>
-                    <p class="mt-3" id="objective-text">
+                    <p class="mt-3 objective-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum sequi enim vitae culpa omnis recusandae, accusamus illo, reiciendis nobis facilis impedit ducimus, perferendis delectus voluptate mollitia rerum nam quos fugiat veniam aliquam cupiditate in ab ipsa? Nisi quae sed ratione dignissimos sit quod commodi doloribus? Libero nesciunt hic nam, voluptatum voluptates impedit, porro, quidem possimus dolorem sapiente dolorum suscipit. Magnam iste quas amet. Officiis blanditiis dignissimos et accusamus odit, maiores, beatae iure labore cum esse maxime, similique distinctio id cumque?
                     </p>
                 </div>
@@ -174,31 +173,27 @@
                     <div class="card experiences px-1">
                         <h2>Experiências de Trabalho</h2>
                     </div>
-                    <p class="objective-text mt-3">
-                        <ul>
-                            <li>Jardineira</li>
-                            <li>Escrivã</li>
-                            <li>Ministra</li>
-                            <li>Jardineira</li>
-                            <li>Escrivã</li>
-                            <li>Ministra</li>
-                        </ul>
-                    </p>
+                    <ul class="experiences-list mt-3">
+                        <li>Jardineira</li>
+                        <li>Escrivã</li>
+                        <li>Ministra</li>
+                        <li>Jardineira</li>
+                        <li>Escrivã</li>
+                        <li>Ministra</li>
+                    </ul>
                 </div>
 
                 <div class="principal">
                     <div class="card qualifications px-1">
                         <h2>Qualificações Acadêmicas</h2>
                     </div>
-                    <p class="objective-text mt-3">
-                        <ul>
-                            <li>Graduada em Agricultura (2005)</li>
-                            <li>Especialização em Administração (2010)</li>
-                        </ul>
-                    </p>
+                    <ul class="qualifications-list mt-3">
+                        <li>Graduada em Agricultura (2005)</li>
+                        <li>Especialização em Administração (2010)</li>                        
+                    </ul>
                 </div>
 
-                <button class="btn btn-primary generator" onclick="print()">Gerar Currículo</button>
+                <button class="btn btn-primary generator" onclick="print()">Imprimir Currículo</button>
                 <!-- segunda coluna -->
             </div>
         </div>
